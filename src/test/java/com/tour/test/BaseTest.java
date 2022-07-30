@@ -36,7 +36,7 @@ public class BaseTest {
                 break;
         }
 
-         /*   String host="localhost";
+         /*  String host="localhost";
         MutableCapabilities dc;
 
         if(System.getProperty("BROWSER") != null &&
@@ -52,7 +52,9 @@ public class BaseTest {
 
         String completeUrl = "http://"+host+":4444/wd/hub";
         System.out.println(completeUrl);
-        driver = new RemoteWebDriver(new URL(completeUrl),dc);*/
+        driver = new RemoteWebDriver(new URL(completeUrl),dc);
+
+ */
     }
 
 

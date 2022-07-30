@@ -1,13 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="flightbooking" duration-ms="73289" started-at="2022-07-30T14:04:48 IST" finished-at="2022-07-30T14:06:01 IST">
+  <suite name="flightbooking" duration-ms="76486" started-at="2022-07-30T16:41:28 IST" finished-at="2022-07-30T16:42:45 IST">
     <groups>
     </groups>
-    <test name="flightbook2" duration-ms="73289" started-at="2022-07-30T14:04:48 IST" finished-at="2022-07-30T14:06:01 IST">
+    <test name="flightbook2" duration-ms="68780" started-at="2022-07-30T16:41:28 IST" finished-at="2022-07-30T16:42:37 IST">
       <class name="com.tour.test.UserRegistrationTest">
-        <test-method status="PASS" signature="setBrowserInstance(java.lang.String)[pri:0, instance:com.tour.test.UserRegistrationTest@612fc6eb]" name="setBrowserInstance" is-config="true" duration-ms="4882" started-at="2022-07-30T14:04:48 IST" finished-at="2022-07-30T14:04:52 IST">
+        <test-method status="PASS" signature="setBrowserInstance(java.lang.String)[pri:0, instance:com.tour.test.UserRegistrationTest@12c8a2c0]" name="setBrowserInstance" is-config="true" duration-ms="5106" started-at="2022-07-30T16:41:28 IST" finished-at="2022-07-30T16:41:34 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowserInstance -->
+        <test-method status="PASS" signature="initializePages()[pri:0, instance:com.tour.test.UserRegistrationTest@12c8a2c0]" name="initializePages" is-config="true" duration-ms="62" started-at="2022-07-30T16:41:34 IST" depends-on-methods="com.tour.test.BaseTest.setBrowserInstance" finished-at="2022-07-30T16:41:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method status="PASS" signature="enterResgistrationTest()[pri:0, instance:com.tour.test.UserRegistrationTest@12c8a2c0]" name="enterResgistrationTest" duration-ms="10890" started-at="2022-07-30T16:41:34 IST" finished-at="2022-07-30T16:41:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterResgistrationTest -->
+        <test-method status="PASS" signature="navigateToFlightDetailPage()[pri:0, instance:com.tour.test.UserRegistrationTest@12c8a2c0]" name="navigateToFlightDetailPage" duration-ms="15112" started-at="2022-07-30T16:41:45 IST" depends-on-methods="com.tour.test.UserRegistrationTest.enterResgistrationTest" finished-at="2022-07-30T16:42:00 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlightDetailPage -->
+        <test-method status="PASS" signature="enterFlightDetails()[pri:0, instance:com.tour.test.UserRegistrationTest@12c8a2c0]" name="enterFlightDetails" duration-ms="15958" started-at="2022-07-30T16:42:00 IST" depends-on-methods="com.tour.test.UserRegistrationTest.navigateToFlightDetailPage" finished-at="2022-07-30T16:42:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterFlightDetails -->
+        <test-method status="PASS" signature="selectDepartureAndReturn()[pri:0, instance:com.tour.test.UserRegistrationTest@12c8a2c0]" name="selectDepartureAndReturn" duration-ms="15497" started-at="2022-07-30T16:42:16 IST" depends-on-methods="com.tour.test.UserRegistrationTest.enterFlightDetails" finished-at="2022-07-30T16:42:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectDepartureAndReturn -->
+        <test-method status="PASS" signature="submitBillingAddress()[pri:0, instance:com.tour.test.UserRegistrationTest@12c8a2c0]" name="submitBillingAddress" duration-ms="5409" started-at="2022-07-30T16:42:31 IST" depends-on-methods="com.tour.test.UserRegistrationTest.selectDepartureAndReturn" finished-at="2022-07-30T16:42:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitBillingAddress -->
+        <test-method status="PASS" signature="printflightSummary()[pri:0, instance:com.tour.test.UserRegistrationTest@12c8a2c0]" name="printflightSummary" duration-ms="77" started-at="2022-07-30T16:42:36 IST" depends-on-methods="com.tour.test.UserRegistrationTest.submitBillingAddress" finished-at="2022-07-30T16:42:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printflightSummary -->
+        <test-method status="PASS" signature="closeBrower()[pri:0, instance:com.tour.test.UserRegistrationTest@12c8a2c0]" name="closeBrower" is-config="true" duration-ms="625" started-at="2022-07-30T16:42:37 IST" finished-at="2022-07-30T16:42:37 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrower -->
+      </class> <!-- com.tour.test.UserRegistrationTest -->
+    </test> <!-- flightbook2 -->
+    <test name="flightbook1" duration-ms="76486" started-at="2022-07-30T16:41:28 IST" finished-at="2022-07-30T16:42:45 IST">
+      <class name="com.tour.test.UserRegistrationTest">
+        <test-method status="PASS" signature="setBrowserInstance(java.lang.String)[pri:0, instance:com.tour.test.UserRegistrationTest@612fc6eb]" name="setBrowserInstance" is-config="true" duration-ms="7211" started-at="2022-07-30T16:41:28 IST" finished-at="2022-07-30T16:41:36 IST">
           <params>
             <param index="0">
               <value>
@@ -18,39 +65,39 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowserInstance -->
-        <test-method status="PASS" signature="initializePages()[pri:0, instance:com.tour.test.UserRegistrationTest@612fc6eb]" name="initializePages" is-config="true" duration-ms="34" started-at="2022-07-30T14:04:52 IST" depends-on-methods="com.tour.test.BaseTest.setBrowserInstance" finished-at="2022-07-30T14:04:52 IST">
+        <test-method status="PASS" signature="initializePages()[pri:0, instance:com.tour.test.UserRegistrationTest@612fc6eb]" name="initializePages" is-config="true" duration-ms="3" started-at="2022-07-30T16:41:36 IST" depends-on-methods="com.tour.test.BaseTest.setBrowserInstance" finished-at="2022-07-30T16:41:36 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializePages -->
-        <test-method status="PASS" signature="enterResgistrationTest()[pri:0, instance:com.tour.test.UserRegistrationTest@612fc6eb]" name="enterResgistrationTest" duration-ms="12171" started-at="2022-07-30T14:04:52 IST" finished-at="2022-07-30T14:05:05 IST">
+        <test-method status="PASS" signature="enterResgistrationTest()[pri:0, instance:com.tour.test.UserRegistrationTest@612fc6eb]" name="enterResgistrationTest" duration-ms="11773" started-at="2022-07-30T16:41:36 IST" finished-at="2022-07-30T16:41:47 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterResgistrationTest -->
-        <test-method status="PASS" signature="navigateToFlightDetailPage()[pri:0, instance:com.tour.test.UserRegistrationTest@612fc6eb]" name="navigateToFlightDetailPage" duration-ms="15341" started-at="2022-07-30T14:05:05 IST" depends-on-methods="com.tour.test.UserRegistrationTest.enterResgistrationTest" finished-at="2022-07-30T14:05:20 IST">
+        <test-method status="PASS" signature="navigateToFlightDetailPage()[pri:0, instance:com.tour.test.UserRegistrationTest@612fc6eb]" name="navigateToFlightDetailPage" duration-ms="15778" started-at="2022-07-30T16:41:47 IST" depends-on-methods="com.tour.test.UserRegistrationTest.enterResgistrationTest" finished-at="2022-07-30T16:42:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToFlightDetailPage -->
-        <test-method status="PASS" signature="enterFlightDetails()[pri:0, instance:com.tour.test.UserRegistrationTest@612fc6eb]" name="enterFlightDetails" duration-ms="17471" started-at="2022-07-30T14:05:20 IST" depends-on-methods="com.tour.test.UserRegistrationTest.navigateToFlightDetailPage" finished-at="2022-07-30T14:05:37 IST">
+        <test-method status="PASS" signature="enterFlightDetails()[pri:0, instance:com.tour.test.UserRegistrationTest@612fc6eb]" name="enterFlightDetails" duration-ms="17660" started-at="2022-07-30T16:42:03 IST" depends-on-methods="com.tour.test.UserRegistrationTest.navigateToFlightDetailPage" finished-at="2022-07-30T16:42:21 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterFlightDetails -->
-        <test-method status="PASS" signature="selectDepartureAndReturn()[pri:0, instance:com.tour.test.UserRegistrationTest@612fc6eb]" name="selectDepartureAndReturn" duration-ms="15975" started-at="2022-07-30T14:05:37 IST" depends-on-methods="com.tour.test.UserRegistrationTest.enterFlightDetails" finished-at="2022-07-30T14:05:53 IST">
+        <test-method status="PASS" signature="selectDepartureAndReturn()[pri:0, instance:com.tour.test.UserRegistrationTest@612fc6eb]" name="selectDepartureAndReturn" duration-ms="17440" started-at="2022-07-30T16:42:21 IST" depends-on-methods="com.tour.test.UserRegistrationTest.enterFlightDetails" finished-at="2022-07-30T16:42:38 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectDepartureAndReturn -->
-        <test-method status="PASS" signature="submitBillingAddress()[pri:0, instance:com.tour.test.UserRegistrationTest@612fc6eb]" name="submitBillingAddress" duration-ms="5804" started-at="2022-07-30T14:05:53 IST" depends-on-methods="com.tour.test.UserRegistrationTest.selectDepartureAndReturn" finished-at="2022-07-30T14:05:59 IST">
+        <test-method status="PASS" signature="submitBillingAddress()[pri:0, instance:com.tour.test.UserRegistrationTest@612fc6eb]" name="submitBillingAddress" duration-ms="5805" started-at="2022-07-30T16:42:38 IST" depends-on-methods="com.tour.test.UserRegistrationTest.selectDepartureAndReturn" finished-at="2022-07-30T16:42:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitBillingAddress -->
-        <test-method status="PASS" signature="printflightSummary()[pri:0, instance:com.tour.test.UserRegistrationTest@612fc6eb]" name="printflightSummary" duration-ms="34" started-at="2022-07-30T14:05:59 IST" depends-on-methods="com.tour.test.UserRegistrationTest.submitBillingAddress" finished-at="2022-07-30T14:05:59 IST">
+        <test-method status="PASS" signature="printflightSummary()[pri:0, instance:com.tour.test.UserRegistrationTest@612fc6eb]" name="printflightSummary" duration-ms="71" started-at="2022-07-30T16:42:44 IST" depends-on-methods="com.tour.test.UserRegistrationTest.submitBillingAddress" finished-at="2022-07-30T16:42:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- printflightSummary -->
-        <test-method status="PASS" signature="closeBrower()[pri:0, instance:com.tour.test.UserRegistrationTest@612fc6eb]" name="closeBrower" is-config="true" duration-ms="1534" started-at="2022-07-30T14:05:59 IST" finished-at="2022-07-30T14:06:01 IST">
+        <test-method status="PASS" signature="closeBrower()[pri:0, instance:com.tour.test.UserRegistrationTest@612fc6eb]" name="closeBrower" is-config="true" duration-ms="737" started-at="2022-07-30T16:42:44 IST" finished-at="2022-07-30T16:42:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrower -->
       </class> <!-- com.tour.test.UserRegistrationTest -->
-    </test> <!-- flightbook2 -->
+    </test> <!-- flightbook1 -->
   </suite> <!-- flightbooking -->
 </testng-results>
