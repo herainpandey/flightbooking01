@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="flightbooking" parallel="tests" verbose="1" >
+    <test name="flightbook2" >
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="com.tour.test.UserRegistrationTest" />
+        </classes>
+    </test>
+</suite>
