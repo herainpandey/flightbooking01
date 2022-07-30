@@ -28,13 +28,13 @@ public class BaseTest {
         switch (browser) {
             case "chrome":
                 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\main\\resources\\driver\\chromedriver.exe");
-                this.driver = DiverFactory.getDriver(browser);
                 break;
             case "firefox":
                 System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\src\\main\\resources\\driver\\geckodriver.exe");
-                this.driver = DiverFactory.getDriver(browser);
                 break;
         }
+
+        this.driver = DiverFactory.getDriver(browser);
 
          /*  String host="localhost";
         MutableCapabilities dc;
