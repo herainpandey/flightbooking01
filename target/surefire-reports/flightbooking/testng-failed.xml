@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [flightbooking]" parallel="tests">
+  <listeners>
+    <listener class-name="helper.TestListener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="flightbook1(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.tour.test.UserRegistrationTest">
+        <methods>
+          <include name="submitBillingAddress"/>
+          <include name="closeBrower"/>
+          <include name="selectDepartureAndReturn"/>
+          <include name="initializePages"/>
+          <include name="navigateToFlightDetailPage"/>
+          <include name="printflightSummary"/>
+          <include name="setBrowserInstance"/>
+          <include name="enterResgistrationTest"/>
+          <include name="enterFlightDetails"/>
+        </methods>
+      </class> <!-- com.tour.test.UserRegistrationTest -->
+    </classes>
+  </test> <!-- flightbook1(failed) -->
+  <test thread-count="5" verbose="0" name="flightbook2(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.tour.test.UserRegistrationTest">
+        <methods>
+          <include name="submitBillingAddress"/>
+          <include name="closeBrower"/>
+          <include name="selectDepartureAndReturn"/>
+          <include name="initializePages"/>
+          <include name="navigateToFlightDetailPage"/>
+          <include name="printflightSummary"/>
+          <include name="enterResgistrationTest"/>
+          <include name="setBrowserInstance"/>
+          <include name="enterFlightDetails"/>
+        </methods>
+      </class> <!-- com.tour.test.UserRegistrationTest -->
+    </classes>
+  </test> <!-- flightbook2(failed) -->
+</suite> <!-- Failed suite [flightbooking] -->

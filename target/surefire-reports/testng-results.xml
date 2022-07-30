@@ -1,60 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
+<testng-results skipped="5" failed="2" ignored="0" total="12" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="flightbooking" duration-ms="76289" started-at="2022-07-30T21:45:27 IST" finished-at="2022-07-30T21:46:43 IST">
+  <suite name="flightbooking" duration-ms="50066" started-at="2022-07-30T22:37:43 IST" finished-at="2022-07-30T22:38:33 IST">
     <groups>
     </groups>
-    <test name="flightbook2" duration-ms="70152" started-at="2022-07-30T21:45:27 IST" finished-at="2022-07-30T21:46:37 IST">
+    <test name="flightbook1" duration-ms="46713" started-at="2022-07-30T22:37:43 IST" finished-at="2022-07-30T22:38:29 IST">
       <class name="com.tour.test.UserRegistrationTest">
-        <test-method status="PASS" signature="setBrowserInstance(java.lang.String)[pri:0, instance:com.tour.test.UserRegistrationTest@43a0cee9]" name="setBrowserInstance" is-config="true" duration-ms="3964" started-at="2022-07-30T21:45:27 IST" finished-at="2022-07-30T21:45:31 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setBrowserInstance -->
-        <test-method status="PASS" signature="initializePages()[pri:0, instance:com.tour.test.UserRegistrationTest@43a0cee9]" name="initializePages" is-config="true" duration-ms="44" started-at="2022-07-30T21:45:31 IST" depends-on-methods="com.tour.test.BaseTest.setBrowserInstance" finished-at="2022-07-30T21:45:31 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializePages -->
-        <test-method status="PASS" signature="enterResgistrationTest()[pri:0, instance:com.tour.test.UserRegistrationTest@43a0cee9]" name="enterResgistrationTest" duration-ms="11529" started-at="2022-07-30T21:45:31 IST" finished-at="2022-07-30T21:45:43 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterResgistrationTest -->
-        <test-method status="PASS" signature="navigateToFlightDetailPage()[pri:0, instance:com.tour.test.UserRegistrationTest@43a0cee9]" name="navigateToFlightDetailPage" duration-ms="15118" started-at="2022-07-30T21:45:43 IST" depends-on-methods="com.tour.test.UserRegistrationTest.enterResgistrationTest" finished-at="2022-07-30T21:45:58 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToFlightDetailPage -->
-        <test-method status="PASS" signature="enterFlightDetails()[pri:0, instance:com.tour.test.UserRegistrationTest@43a0cee9]" name="enterFlightDetails" duration-ms="16774" started-at="2022-07-30T21:45:58 IST" depends-on-methods="com.tour.test.UserRegistrationTest.navigateToFlightDetailPage" finished-at="2022-07-30T21:46:15 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterFlightDetails -->
-        <test-method status="PASS" signature="selectDepartureAndReturn()[pri:0, instance:com.tour.test.UserRegistrationTest@43a0cee9]" name="selectDepartureAndReturn" duration-ms="15913" started-at="2022-07-30T21:46:15 IST" depends-on-methods="com.tour.test.UserRegistrationTest.enterFlightDetails" finished-at="2022-07-30T21:46:30 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectDepartureAndReturn -->
-        <test-method status="PASS" signature="submitBillingAddress()[pri:0, instance:com.tour.test.UserRegistrationTest@43a0cee9]" name="submitBillingAddress" duration-ms="5923" started-at="2022-07-30T21:46:30 IST" depends-on-methods="com.tour.test.UserRegistrationTest.selectDepartureAndReturn" finished-at="2022-07-30T21:46:36 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- submitBillingAddress -->
-        <test-method status="PASS" signature="printflightSummary()[pri:0, instance:com.tour.test.UserRegistrationTest@43a0cee9]" name="printflightSummary" duration-ms="183" started-at="2022-07-30T21:46:36 IST" depends-on-methods="com.tour.test.UserRegistrationTest.submitBillingAddress" finished-at="2022-07-30T21:46:37 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- printflightSummary -->
-        <test-method status="PASS" signature="closeBrower()[pri:0, instance:com.tour.test.UserRegistrationTest@43a0cee9]" name="closeBrower" is-config="true" duration-ms="650" started-at="2022-07-30T21:46:37 IST" finished-at="2022-07-30T21:46:37 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrower -->
-      </class> <!-- com.tour.test.UserRegistrationTest -->
-    </test> <!-- flightbook2 -->
-    <test name="flightbook1" duration-ms="76289" started-at="2022-07-30T21:45:27 IST" finished-at="2022-07-30T21:46:43 IST">
-      <class name="com.tour.test.UserRegistrationTest">
-        <test-method status="PASS" signature="setBrowserInstance(java.lang.String)[pri:0, instance:com.tour.test.UserRegistrationTest@42eca56e]" name="setBrowserInstance" is-config="true" duration-ms="5311" started-at="2022-07-30T21:45:27 IST" finished-at="2022-07-30T21:45:32 IST">
+        <test-method status="PASS" signature="setBrowserInstance(java.lang.String)[pri:0, instance:com.tour.test.UserRegistrationTest@b7f23d9]" name="setBrowserInstance" is-config="true" duration-ms="6885" started-at="2022-07-30T22:37:43 IST" finished-at="2022-07-30T22:37:50 IST">
           <params>
             <param index="0">
               <value>
@@ -65,39 +18,333 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowserInstance -->
-        <test-method status="PASS" signature="initializePages()[pri:0, instance:com.tour.test.UserRegistrationTest@42eca56e]" name="initializePages" is-config="true" duration-ms="7" started-at="2022-07-30T21:45:32 IST" depends-on-methods="com.tour.test.BaseTest.setBrowserInstance" finished-at="2022-07-30T21:45:32 IST">
+        <test-method status="PASS" signature="initializePages()[pri:0, instance:com.tour.test.UserRegistrationTest@b7f23d9]" name="initializePages" is-config="true" duration-ms="2" started-at="2022-07-30T22:37:50 IST" depends-on-methods="com.tour.test.BaseTest.setBrowserInstance" finished-at="2022-07-30T22:37:50 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializePages -->
-        <test-method status="PASS" signature="enterResgistrationTest()[pri:0, instance:com.tour.test.UserRegistrationTest@42eca56e]" name="enterResgistrationTest" duration-ms="12508" started-at="2022-07-30T21:45:32 IST" finished-at="2022-07-30T21:45:45 IST">
+        <test-method status="PASS" signature="enterResgistrationTest()[pri:0, instance:com.tour.test.UserRegistrationTest@b7f23d9]" name="enterResgistrationTest" duration-ms="11933" started-at="2022-07-30T22:37:50 IST" finished-at="2022-07-30T22:38:02 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterResgistrationTest -->
-        <test-method status="PASS" signature="navigateToFlightDetailPage()[pri:0, instance:com.tour.test.UserRegistrationTest@42eca56e]" name="navigateToFlightDetailPage" duration-ms="16031" started-at="2022-07-30T21:45:45 IST" depends-on-methods="com.tour.test.UserRegistrationTest.enterResgistrationTest" finished-at="2022-07-30T21:46:01 IST">
+        <test-method status="PASS" signature="navigateToFlightDetailPage()[pri:0, instance:com.tour.test.UserRegistrationTest@b7f23d9]" name="navigateToFlightDetailPage" duration-ms="15312" started-at="2022-07-30T22:38:02 IST" depends-on-methods="com.tour.test.UserRegistrationTest.enterResgistrationTest" finished-at="2022-07-30T22:38:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToFlightDetailPage -->
-        <test-method status="PASS" signature="enterFlightDetails()[pri:0, instance:com.tour.test.UserRegistrationTest@42eca56e]" name="enterFlightDetails" duration-ms="18179" started-at="2022-07-30T21:46:01 IST" depends-on-methods="com.tour.test.UserRegistrationTest.navigateToFlightDetailPage" finished-at="2022-07-30T21:46:19 IST">
+        <test-method status="FAIL" signature="enterFlightDetails()[pri:0, instance:com.tour.test.UserRegistrationTest@b7f23d9]" name="enterFlightDetails" duration-ms="10547" started-at="2022-07-30T22:38:17 IST" depends-on-methods="com.tour.test.UserRegistrationTest.navigateToFlightDetailPage" finished-at="2022-07-30T22:38:27 IST">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <input id="findFlights" name="findFlights" type="button"> could not be scrolled into view
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-FSJF2OQ', ip: '192.168.1.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ffb8dd34-aeb1-4627-bf0b-076869c655dc, clickElement {id=38574984-1249-4ff4-b879-913b324b5bb4}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0, moz:accessibilityChecks: false, moz:buildID: 20220718155818, moz:debuggerAddress: localhost:53119, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11736, moz:profile: C:\Users\AVITA\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53119/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (ffb8dd34-aeb1-4627-bf0b-076869c655dc)] -> xpath: //input[@name='findFlights']]
+Session ID: ffb8dd34-aeb1-4627-bf0b-076869c655dc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <input id="findFlights" name="findFlights" type="button"> could not be scrolled into view
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-FSJF2OQ', ip: '192.168.1.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [ffb8dd34-aeb1-4627-bf0b-076869c655dc, clickElement {id=38574984-1249-4ff4-b879-913b324b5bb4}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0, moz:accessibilityChecks: false, moz:buildID: 20220718155818, moz:debuggerAddress: localhost:53119, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11736, moz:profile: C:\Users\AVITA\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53119/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (ffb8dd34-aeb1-4627-bf0b-076869c655dc)] -> xpath: //input[@name='findFlights']]
+Session ID: ffb8dd34-aeb1-4627-bf0b-076869c655dc
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at com.sun.proxy.$Proxy13.click(Unknown Source)
+at com.tour.pages.flightDetail.FlightDetailPage.clickContinue(FlightDetailPage.java:35)
+at com.tour.test.UserRegistrationTest.enterFlightDetails(UserRegistrationTest.java:74)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- enterFlightDetails -->
-        <test-method status="PASS" signature="selectDepartureAndReturn()[pri:0, instance:com.tour.test.UserRegistrationTest@42eca56e]" name="selectDepartureAndReturn" duration-ms="17113" started-at="2022-07-30T21:46:19 IST" depends-on-methods="com.tour.test.UserRegistrationTest.enterFlightDetails" finished-at="2022-07-30T21:46:36 IST">
+        <test-method status="SKIP" signature="selectDepartureAndReturn()[pri:0, instance:com.tour.test.UserRegistrationTest@b7f23d9]" name="selectDepartureAndReturn" duration-ms="0" started-at="2022-07-30T22:38:28 IST" depends-on-methods="com.tour.test.UserRegistrationTest.enterFlightDetails" finished-at="2022-07-30T22:38:28 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.tour.test.UserRegistrationTest.selectDepartureAndReturn() on instance com.tour.test.UserRegistrationTest@b7f23d9 depends on not successfully finished methods 
+[com.tour.test.UserRegistrationTest.enterFlightDetails() on instance com.tour.test.UserRegistrationTest@b7f23d9]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.tour.test.UserRegistrationTest.selectDepartureAndReturn() on instance com.tour.test.UserRegistrationTest@b7f23d9 depends on not successfully finished methods 
+[com.tour.test.UserRegistrationTest.enterFlightDetails() on instance com.tour.test.UserRegistrationTest@b7f23d9]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectDepartureAndReturn -->
-        <test-method status="PASS" signature="submitBillingAddress()[pri:0, instance:com.tour.test.UserRegistrationTest@42eca56e]" name="submitBillingAddress" duration-ms="5827" started-at="2022-07-30T21:46:36 IST" depends-on-methods="com.tour.test.UserRegistrationTest.selectDepartureAndReturn" finished-at="2022-07-30T21:46:42 IST">
+        <test-method status="SKIP" signature="submitBillingAddress()[pri:0, instance:com.tour.test.UserRegistrationTest@b7f23d9]" name="submitBillingAddress" duration-ms="0" started-at="2022-07-30T22:38:28 IST" depends-on-methods="com.tour.test.UserRegistrationTest.selectDepartureAndReturn" finished-at="2022-07-30T22:38:28 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.tour.test.UserRegistrationTest.submitBillingAddress() on instance com.tour.test.UserRegistrationTest@b7f23d9 depends on not successfully finished methods 
+[com.tour.test.UserRegistrationTest.selectDepartureAndReturn() on instance com.tour.test.UserRegistrationTest@b7f23d9]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.tour.test.UserRegistrationTest.submitBillingAddress() on instance com.tour.test.UserRegistrationTest@b7f23d9 depends on not successfully finished methods 
+[com.tour.test.UserRegistrationTest.selectDepartureAndReturn() on instance com.tour.test.UserRegistrationTest@b7f23d9]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitBillingAddress -->
-        <test-method status="PASS" signature="printflightSummary()[pri:0, instance:com.tour.test.UserRegistrationTest@42eca56e]" name="printflightSummary" duration-ms="58" started-at="2022-07-30T21:46:42 IST" depends-on-methods="com.tour.test.UserRegistrationTest.submitBillingAddress" finished-at="2022-07-30T21:46:42 IST">
+        <test-method status="SKIP" signature="printflightSummary()[pri:0, instance:com.tour.test.UserRegistrationTest@b7f23d9]" name="printflightSummary" duration-ms="0" started-at="2022-07-30T22:38:28 IST" depends-on-methods="com.tour.test.UserRegistrationTest.submitBillingAddress" finished-at="2022-07-30T22:38:28 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.tour.test.UserRegistrationTest.printflightSummary() on instance com.tour.test.UserRegistrationTest@b7f23d9 depends on not successfully finished methods 
+[com.tour.test.UserRegistrationTest.submitBillingAddress() on instance com.tour.test.UserRegistrationTest@b7f23d9]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.tour.test.UserRegistrationTest.printflightSummary() on instance com.tour.test.UserRegistrationTest@b7f23d9 depends on not successfully finished methods 
+[com.tour.test.UserRegistrationTest.submitBillingAddress() on instance com.tour.test.UserRegistrationTest@b7f23d9]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- printflightSummary -->
-        <test-method status="PASS" signature="closeBrower()[pri:0, instance:com.tour.test.UserRegistrationTest@42eca56e]" name="closeBrower" is-config="true" duration-ms="1244" started-at="2022-07-30T21:46:42 IST" finished-at="2022-07-30T21:46:43 IST">
+        <test-method status="PASS" signature="closeBrower()[pri:0, instance:com.tour.test.UserRegistrationTest@b7f23d9]" name="closeBrower" is-config="true" duration-ms="1214" started-at="2022-07-30T22:38:28 IST" finished-at="2022-07-30T22:38:29 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrower -->
       </class> <!-- com.tour.test.UserRegistrationTest -->
     </test> <!-- flightbook1 -->
+    <test name="flightbook2" duration-ms="50066" started-at="2022-07-30T22:37:43 IST" finished-at="2022-07-30T22:38:33 IST">
+      <class name="com.tour.test.UserRegistrationTest">
+        <test-method status="PASS" signature="setBrowserInstance(java.lang.String)[pri:0, instance:com.tour.test.UserRegistrationTest@15bb6bea]" name="setBrowserInstance" is-config="true" duration-ms="4849" started-at="2022-07-30T22:37:43 IST" finished-at="2022-07-30T22:37:48 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setBrowserInstance -->
+        <test-method status="PASS" signature="initializePages()[pri:0, instance:com.tour.test.UserRegistrationTest@15bb6bea]" name="initializePages" is-config="true" duration-ms="78" started-at="2022-07-30T22:37:48 IST" depends-on-methods="com.tour.test.BaseTest.setBrowserInstance" finished-at="2022-07-30T22:37:48 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePages -->
+        <test-method status="PASS" signature="enterResgistrationTest()[pri:0, instance:com.tour.test.UserRegistrationTest@15bb6bea]" name="enterResgistrationTest" duration-ms="11063" started-at="2022-07-30T22:37:48 IST" finished-at="2022-07-30T22:37:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterResgistrationTest -->
+        <test-method status="PASS" signature="navigateToFlightDetailPage()[pri:0, instance:com.tour.test.UserRegistrationTest@15bb6bea]" name="navigateToFlightDetailPage" duration-ms="15192" started-at="2022-07-30T22:37:59 IST" depends-on-methods="com.tour.test.UserRegistrationTest.enterResgistrationTest" finished-at="2022-07-30T22:38:14 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToFlightDetailPage -->
+        <test-method status="PASS" signature="enterFlightDetails()[pri:0, instance:com.tour.test.UserRegistrationTest@15bb6bea]" name="enterFlightDetails" duration-ms="18046" started-at="2022-07-30T22:38:14 IST" depends-on-methods="com.tour.test.UserRegistrationTest.navigateToFlightDetailPage" finished-at="2022-07-30T22:38:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterFlightDetails -->
+        <test-method status="FAIL" signature="selectDepartureAndReturn()[pri:0, instance:com.tour.test.UserRegistrationTest@15bb6bea]" name="selectDepartureAndReturn" duration-ms="3" started-at="2022-07-30T22:38:32 IST" depends-on-methods="com.tour.test.UserRegistrationTest.enterFlightDetails" finished-at="2022-07-30T22:38:32 IST">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-FSJF2OQ', ip: '192.168.1.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, findElements {using=xpath, value=//*[contains(text(),'Departure')]/following-sibling::table[1]/tbody/tr/th/label}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0, moz:accessibilityChecks: false, moz:buildID: 20220718155818, moz:debuggerAddress: localhost:53119, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11736, moz:profile: C:\Users\AVITA\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53119/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-FSJF2OQ', ip: '192.168.1.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_281'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [null, findElements {using=xpath, value=//*[contains(text(),'Departure')]/following-sibling::table[1]/tbody/tr/th/label}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0, moz:accessibilityChecks: false, moz:buildID: 20220718155818, moz:debuggerAddress: localhost:53119, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11736, moz:profile: C:\Users\AVITA\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53119/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElements(ElementLocation.java:179)
+at org.openqa.selenium.remote.ElementLocation.findElements(ElementLocation.java:102)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:402)
+at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:394)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElements(DefaultElementLocator.java:87)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:37)
+at com.sun.proxy.$Proxy14.stream(Unknown Source)
+at com.tour.pages.flightDeparture.FlightDepartureComponent.selectFlightDeparture(FlightDepartureComponent.java:25)
+at com.tour.test.UserRegistrationTest.selectDepartureAndReturn(UserRegistrationTest.java:81)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectDepartureAndReturn -->
+        <test-method status="SKIP" signature="submitBillingAddress()[pri:0, instance:com.tour.test.UserRegistrationTest@15bb6bea]" name="submitBillingAddress" duration-ms="0" started-at="2022-07-30T22:38:32 IST" depends-on-methods="com.tour.test.UserRegistrationTest.selectDepartureAndReturn" finished-at="2022-07-30T22:38:32 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.tour.test.UserRegistrationTest.submitBillingAddress() on instance com.tour.test.UserRegistrationTest@15bb6bea depends on not successfully finished methods 
+[com.tour.test.UserRegistrationTest.selectDepartureAndReturn() on instance com.tour.test.UserRegistrationTest@15bb6bea]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.tour.test.UserRegistrationTest.submitBillingAddress() on instance com.tour.test.UserRegistrationTest@15bb6bea depends on not successfully finished methods 
+[com.tour.test.UserRegistrationTest.selectDepartureAndReturn() on instance com.tour.test.UserRegistrationTest@15bb6bea]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitBillingAddress -->
+        <test-method status="SKIP" signature="printflightSummary()[pri:0, instance:com.tour.test.UserRegistrationTest@15bb6bea]" name="printflightSummary" duration-ms="0" started-at="2022-07-30T22:38:32 IST" depends-on-methods="com.tour.test.UserRegistrationTest.submitBillingAddress" finished-at="2022-07-30T22:38:32 IST">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.tour.test.UserRegistrationTest.printflightSummary() on instance com.tour.test.UserRegistrationTest@15bb6bea depends on not successfully finished methods 
+[com.tour.test.UserRegistrationTest.submitBillingAddress() on instance com.tour.test.UserRegistrationTest@15bb6bea]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.tour.test.UserRegistrationTest.printflightSummary() on instance com.tour.test.UserRegistrationTest@15bb6bea depends on not successfully finished methods 
+[com.tour.test.UserRegistrationTest.submitBillingAddress() on instance com.tour.test.UserRegistrationTest@15bb6bea]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:149)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1259)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printflightSummary -->
+        <test-method status="PASS" signature="closeBrower()[pri:0, instance:com.tour.test.UserRegistrationTest@15bb6bea]" name="closeBrower" is-config="true" duration-ms="694" started-at="2022-07-30T22:38:32 IST" finished-at="2022-07-30T22:38:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrower -->
+      </class> <!-- com.tour.test.UserRegistrationTest -->
+    </test> <!-- flightbook2 -->
   </suite> <!-- flightbooking -->
 </testng-results>

@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class BillingAddress extends AbstractComponent {
 
-    @FindBy(xpath = "//input[@id='input_53_addr_line1']")
+    @FindBy(xpath = "//input[@id='input_53_addr_line']")
     private WebElement addressl1;
 
     @FindBy(xpath = "//input[@id='input_53_addr_line2']")
