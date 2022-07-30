@@ -2,9 +2,11 @@ com\tour\pages\main\MailingInformationPage.class
 com\tour\pages\flightDetail\FlightDetailComponent.class
 com\tour\pages\orderDetail\FlightSummary.class
 com\tour\pages\flightDeparture\FlightReturnComponent.class
+helper\ExtentManager.class
 com\tour\pages\main\RegistrationPage.class
 com\tour\pages\flightDeparture\FlightDepartureComponent.class
 com\tour\pages\flightDetail\PreferenceComponent.class
+helper\TestListener.class
 com\tour\pages\common\AbstractComponent.class
 com\tour\pages\main\ContactInformationPage.class
 com\tour\pages\main\UserInformationPage.class
