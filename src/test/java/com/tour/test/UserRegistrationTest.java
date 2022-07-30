@@ -36,7 +36,7 @@ public class UserRegistrationTest extends  BaseTest{
     @Test
     public void enterResgistrationTest(){
         try {
-            System.out.println("Via Webhook");
+            System.out.println("Via Webhook1");
             registrationPage.goTo();
             Assert.assertTrue(registrationPage.getContactInformationPage().isDisplayed(), "Element not present");
             registrationPage.getContactInformationPage().enterDetails(TestDataFactory.getValue("CI"));
