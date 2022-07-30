@@ -9,6 +9,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Calendar;
+import java.util.Date;
 
 public abstract  class AbstractComponent {
     protected static WebDriverWait wait;
@@ -23,14 +25,14 @@ public abstract  class AbstractComponent {
     public abstract boolean isDisplayed();
 
     public static String screenShotPath(String failMethod) throws IOException {
-        String destination = "screenshots\\" + failMethod + ".jpg";
-
+        File fileName = new File( failMethod + new Date().getTime() +".png");
+        String distination = fileName.getAbsolutePath();
         try {
             File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-            FileUtils.copyFile(source, new File(destination));
+            FileUtils.copyFile(source, new File(distination));
         }catch (Exception e){
             e.printStackTrace();
         }
-        return destination;
+        return distination;
     }
 }

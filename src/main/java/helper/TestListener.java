@@ -4,6 +4,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.Markup;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.tour.pages.common.AbstractComponent;
 import org.testng.ITestContext;
@@ -35,7 +36,8 @@ public class TestListener implements ITestListener {
     public void onTestFailure(ITestResult result) {
         thread.get().log(Status.FAIL,MarkupHelper.createLabel("FAILED",ExtentColor.RED));
         try {
-            thread.get().addScreenCaptureFromPath(screenShotPath(result.getMethod().getMethodName()));
+            thread.get().log(Status.INFO, (Markup) thread.get().addScreenCaptureFromPath(screenShotPath(result.getMethod().getMethodName())));
+
         } catch (IOException e) {
             e.printStackTrace();
         }
