@@ -26,7 +26,7 @@ public abstract  class AbstractComponent {
 
     public static String screenShotPath(String failMethod) throws IOException {
         File fileName = new File( failMethod + new Date().getTime() +".png");
-        String distination = fileName.getAbsolutePath();
+        String distination = System.getProperty("user.dir")+"\\screenshots\\"+fileName;
         try {
             File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
             FileUtils.copyFile(source, new File(distination));

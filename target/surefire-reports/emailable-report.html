@@ -9,7 +9,95 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">flightbooking</th></tr>
+<tr><td><a href="#t0">flightbook1</a></td><td class="num">4</td><td class="num attn">1</td><td class="num attn">2</td><td class="num attn">1</td><td class="num">66,585</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">flightbooking</th></tr></tbody></table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">flightbooking</th></tr></tbody><tbody id="t0"><tr><th colspan="4">flightbook1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.tour.test.UserRegistrationTest</td><td><a href="#m0">submitBillingAddress</a></td><td rowspan="1">1659254089410</td><td rowspan="1">8</td></tr><tr><th colspan="4">flightbook1 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.tour.test.UserRegistrationTest</td><td><a href="#m1">printflightSummary</a></td><td rowspan="1">1659254089797</td><td rowspan="1">0</td></tr><tr><th colspan="4">flightbook1 &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="2">com.tour.test.UserRegistrationTest</td><td><a href="#m2">submitBillingAddress</a></td><td rowspan="2">1659254089361</td><td rowspan="2">32</td></tr><tr class="retriedeven"><td><a href="#m3">submitBillingAddress</a></td></tr><tr><th colspan="4">flightbook1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.tour.test.UserRegistrationTest</td><td><a href="#m4">enterFlightDetails</a></td><td rowspan="1">1659254055687</td><td rowspan="1">17603</td></tr><tr class="passedeven"><td><a href="#m5">enterResgistrationTest</a></td><td rowspan="1">1659254028473</td><td rowspan="1">11817</td></tr><tr class="passedeven"><td><a href="#m6">navigateToFlightDetailPage</a></td><td rowspan="1">1659254040325</td><td rowspan="1">15358</td></tr><tr class="passedeven"><td><a href="#m7">selectDepartureAndReturn</a></td><td rowspan="1">1659254073292</td><td rowspan="1">16066</td></tr></tbody>
+</table>
+<h2>flightbook1</h2><h3 id="m0">com.tour.test.UserRegistrationTest#submitBillingAddress</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@id=&apos;input_53_addr_line&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-FSJF2OQ&apos;, ip: &apos;172.30.16.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9af93568-2e9a-4d66-91b7-ea0e72d907f1, findElement {using=xpath, value=//input[@id=&apos;input_53_addr_line&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0, moz:accessibilityChecks: false, moz:buildID: 20220718155818, moz:debuggerAddress: localhost:55038, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13664, moz:profile: C:\Users\AVITA\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55038/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9af93568-2e9a-4d66-91b7-ea0e72d907f1
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at com.tour.pages.billingAddress.BillingAddress.enterBillingAddress(BillingAddress.java:44)
+	at com.tour.test.UserRegistrationTest.submitBillingAddress(UserRegistrationTest.java:90)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.tour.test.UserRegistrationTest#printflightSummary</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method com.tour.test.UserRegistrationTest.printflightSummary() on instance com.tour.test.UserRegistrationTest@58c1c010 depends on not successfully finished methods 
+[com.tour.test.UserRegistrationTest.submitBillingAddress() on instance com.tour.test.UserRegistrationTest@58c1c010]
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.tour.test.UserRegistrationTest#submitBillingAddress</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@id=&apos;input_53_addr_line&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-FSJF2OQ&apos;, ip: &apos;172.30.16.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9af93568-2e9a-4d66-91b7-ea0e72d907f1, findElement {using=xpath, value=//input[@id=&apos;input_53_addr_line&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0, moz:accessibilityChecks: false, moz:buildID: 20220718155818, moz:debuggerAddress: localhost:55038, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13664, moz:profile: C:\Users\AVITA\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55038/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9af93568-2e9a-4d66-91b7-ea0e72d907f1
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at com.tour.pages.billingAddress.BillingAddress.enterBillingAddress(BillingAddress.java:44)
+	at com.tour.test.UserRegistrationTest.submitBillingAddress(UserRegistrationTest.java:90)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.tour.test.UserRegistrationTest#submitBillingAddress</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@id=&apos;input_53_addr_line&apos;]
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
+System info: host: &apos;DESKTOP-FSJF2OQ&apos;, ip: &apos;172.30.16.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_281&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [9af93568-2e9a-4d66-91b7-ea0e72d907f1, findElement {using=xpath, value=//input[@id=&apos;input_53_addr_line&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 103.0, moz:accessibilityChecks: false, moz:buildID: 20220718155818, moz:debuggerAddress: localhost:55038, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 13664, moz:profile: C:\Users\AVITA\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55038/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9af93568-2e9a-4d66-91b7-ea0e72d907f1
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy12.sendKeys(Unknown Source)
+	at com.tour.pages.billingAddress.BillingAddress.enterBillingAddress(BillingAddress.java:44)
+	at com.tour.test.UserRegistrationTest.submitBillingAddress(UserRegistrationTest.java:90)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.tour.test.UserRegistrationTest#enterFlightDetails</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.tour.test.UserRegistrationTest#enterResgistrationTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.tour.test.UserRegistrationTest#navigateToFlightDetailPage</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.tour.test.UserRegistrationTest#selectDepartureAndReturn</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

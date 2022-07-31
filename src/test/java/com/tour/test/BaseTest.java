@@ -7,6 +7,7 @@ import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterTest;
@@ -19,7 +20,8 @@ import java.net.URL;
 
 public class BaseTest {
 
-    protected  WebDriver driver;
+    protected WebDriver driver;
+    private ThreadLocal<WebDriver> thread = new ThreadLocal<>();
 
     @Parameters({"browser"})
     @BeforeTest
@@ -28,38 +30,21 @@ public class BaseTest {
         switch (browser) {
             case "chrome":
                 System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "\\src\\main\\resources\\driver\\chromedriver.exe");
+                thread.set(DiverFactory.getDriver(browser));
+                driver = thread.get();
                 break;
             case "firefox":
                 System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "\\src\\main\\resources\\driver\\geckodriver.exe");
+                thread.set(DiverFactory.getDriver(browser));
+                driver = thread.get();
                 break;
         }
-
-        this.driver = DiverFactory.getDriver(browser);
-
-         /*  String host="localhost";
-        MutableCapabilities dc;
-
-        if(System.getProperty("BROWSER") != null &&
-                System.getProperty("BROWSER").equalsIgnoreCase("firefox")){
-            dc = new FirefoxOptions();
-        }else{
-            dc = new ChromeOptions();
-        }
-
-        if(System.getProperty("HUB_HOST")!=null){
-            host = System.getProperty("HUB_HOST");
-        }
-
-        String completeUrl = "http://"+host+":4444/wd/hub";
-        System.out.println(completeUrl);
-        driver = new RemoteWebDriver(new URL(completeUrl),dc);
-
- */
     }
 
 
     @AfterTest
-    public void closeBrower(){
-        this.driver.quit();
+    public void closeBrower() {
+        thread.get().quit();
+        thread.remove();
     }
 }
